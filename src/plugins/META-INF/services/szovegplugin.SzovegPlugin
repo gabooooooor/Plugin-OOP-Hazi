@@ -1,2 +1,5 @@
 szovegplugin.plugins.NagybetuPlugin
 szovegplugin.plugins.SzamlalPlugin
+szovegplugin.plugins.EkezettelenitPlugin
+szovegplugin.plugins.PalindromPlugin
+szovegplugin.plugins.CaesarPlugin

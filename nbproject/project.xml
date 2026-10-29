@@ -5,7 +5,8 @@
         <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
             <name>Plugin-OOP-Hazi</name>
             <source-roots>
-                <root id="src.dir"/>
+                <root id="src.core.dir"/>
+                <root id="src.plugins.dir"/>
             </source-roots>
             <test-roots/>
         </data>

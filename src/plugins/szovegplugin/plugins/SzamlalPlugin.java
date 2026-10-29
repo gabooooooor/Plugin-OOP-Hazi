@@ -4,10 +4,30 @@
  */
 package szovegplugin.plugins;
 
+import szovegplugin.SzovegPlugin;
 /**
  *
  * @author ministar
  */
-public class SzamlalPlugin {
+public class SzamlalPlugin implements SzovegPlugin{
     
+    @Override
+    public String nev()
+    {
+        return "szamlal";
+    }
+    
+    @Override
+    public String leiras()
+    {
+        return "Counts the number of the words";
+    }
+    
+    @Override
+    public String feldolgoz(String bemenet)
+    {
+        String trimmed = bemenet.trim();
+        int count = trimmed.isEmpty() ? 0 : trimmed.split("\\s+").length;
+        return String.valueOf(count);
+    }
 }

@@ -4,10 +4,28 @@
  */
 package szovegplugin.plugins;
 
+import szovegplugin.SzovegPlugin;
 /**
  *
  * @author ministar
  */
-public class NagybetuPlugin {
+public class NagybetuPlugin implements SzovegPlugin{
     
+    @Override
+    public String nev()
+    {
+        return "nagybetu";
+    }
+    
+    @Override
+    public String leiras()
+    {
+        return "Converts the text to upper case";
+    }
+    
+    @Override
+    public String feldolgoz(String bemenet)
+    {
+        return bemenet.toUpperCase();
+    }
 }
